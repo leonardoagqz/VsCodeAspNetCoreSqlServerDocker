@@ -1,0 +1,23 @@
+@model livraria.Models.Livro
+
+<h2>Novo Livro</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-horizontal">
+        <hr />
+        <div class="form-group">
+            <label asp-for="Titulo" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Titulo" class="form-control" />
+                <span asp-validation-for="Titulo" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Criar Livro" class="btn btn-success" />
+                <a asp-action="Index" class="btn btn-info">Retornar</a>
+            </div>
+        </div>
+    </div>
+</form>

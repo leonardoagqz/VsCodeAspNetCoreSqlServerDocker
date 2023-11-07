@@ -1,0 +1,22 @@
+version: '2.23.0'
+
+services:
+  livrariamvc:
+    image: ${DOCKER_REGISTRY-}livraria
+    build:
+      context: ./
+      dockerfile: ./dockerfile
+    ports:
+     - "8081:80"       
+    depends_on:
+     - sqldata
+
+  sqldata:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - SA_PASSWORD=Numsey#2023
+      - ACCEPT_EULA=Y
+    volumes:
+      - D:\03Projetos\Docker\Docker - ASP .NET Core, EF Core com SQL Server\backup_sqlserver_docker:/var/opt/mssql/data   
+    ports:
+      - "1450:1433"  

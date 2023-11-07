@@ -1,0 +1,24 @@
+# Please refer https://aka.ms/HTTPSinContainer on how to setup an https developer certificate for your ASP.NET Core service.
+
+version: '3.4'
+
+services:
+  livraria:
+    image:  ${DOCKER_REGISTRY-}livraria
+    build:
+      context: .
+      dockerfile: livraria/Dockerfile
+    ports:
+      - "8081:80"
+    depends_on:
+     - sqldata
+
+  sqldata:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - SA_PASSWORD=Numsey#2023
+      - ACCEPT_EULA=Y
+    volumes:
+      - D:\03Projetos\Docker\Docker - ASP .NET Core, EF Core com SQL Server\backup_sqlserver_docker:/var/opt/mssql/data   
+    ports:
+      - "1450:1433"  
