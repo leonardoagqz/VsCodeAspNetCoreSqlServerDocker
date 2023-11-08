@@ -13,6 +13,7 @@ Baixando a imagem
 Criando Container
 - docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=xxxxxxxx" -p 1450:1433 --name sqlserverdb -d  mcr.microsoft.com/mssql/server:2022-latest
 
+Isso aqui é legal, acessando o banco pelo VsCode
 ![image](https://github.com/leonardoagqz/VsCodeAspNetCoreSqlServerDocker/assets/38500433/97591376-800b-4067-a7dc-18425e3a1169)
 
 
@@ -34,7 +35,9 @@ Conteinerizando a aplicação Asp .NET Core
 - Criar o arquivo Dockerfile
 - Definir as intruções para criação da imagem
 - Criar a Imagem   
- 
+
+ ![image](https://github.com/leonardoagqz/VsCodeAspNetCoreSqlServerDocker/assets/38500433/6329d613-160a-492e-af32-ed617c58f975)
+
 
 Criar e configurar arquivo: docker-compose.yml
 
