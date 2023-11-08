@@ -36,10 +36,10 @@ Conteinerizando a aplicação Asp .NET Core
 - Definir as intruções para criação da imagem
 - Criar a Imagem   
 
- ![image](https://github.com/leonardoagqz/VsCodeAspNetCoreSqlServerDocker/assets/38500433/6329d613-160a-492e-af32-ed617c58f975)
-
 
 Criar e configurar arquivo: docker-compose.yml
 
 Configuração essencial para que a aplicação .Net no container consiga acessar o banco de dados sqlserver do container
 
+Containers em execução
+ ![image](https://github.com/leonardoagqz/VsCodeAspNetCoreSqlServerDocker/assets/38500433/6329d613-160a-492e-af32-ed617c58f975)
