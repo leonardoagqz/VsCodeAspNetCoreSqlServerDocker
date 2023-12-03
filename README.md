@@ -1,4 +1,4 @@
-# VsCodeAspNetCoreSqlServerDocker
+# VsCodeAspNetCoreSqlServerDocker - Livraria
 Docker - Conteineirizando (Aplicação: Asp.Net Core) e (Banco de Dados: SqlServer) | Utilizando IDE VsCode | Para fins de estudo.
 
 Detalhes sobre as etapas:
